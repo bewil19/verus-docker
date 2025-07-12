@@ -20,4 +20,4 @@ ENV VERUSD_RPC_PORT=8080
 COPY entrypoint.sh /root/verus/verus-cli/entrypoint.sh
 RUN chmod +x /root/verus/verus-cli/entrypoint.sh
 
-CMD ["./entrypoint.sh"]
+ENTRYPOINT ["bash", "/root/verus/verus-cli/entrypoint.sh"]
